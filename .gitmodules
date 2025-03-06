@@ -1,0 +1,18 @@
+[submodule "productService"]
+	path = productService
+	url = https://github.com/MauLight/symetria-marketplace-backend-products
+[submodule "transbankService"]
+	path = transbankService
+	url = https://github.com/MauLight/symetria-marketplace-backend-transbank
+[submodule "gatewayService"]
+	path = gatewayService
+	url = https://github.com/MauLight/symetria-marketplace-gateway
+[submodule "courierService"]
+	path = courierService
+	url = https://github.com/MauLight/symetria-marketplace-backend-courier
+[submodule "uiService"]
+	path = uiService
+	url = https://github.com/MauLight/symetria-marketplace-backend-administrator
+[submodule "authService"]
+	path = authService
+	url = https://github.com/MauLight/symetria-marketplace-backend
