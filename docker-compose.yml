@@ -1,0 +1,58 @@
+services:
+  gateway:
+    build: ./gateway
+    image: symetria-marketplace-gateway  # Explicit lowercase image name
+    ports:
+      - "3001:3001"
+    depends_on:
+      - authService
+      - courierService
+      - errorsService
+      - productService
+      - siiService
+      - transbankService
+      - uiService
+    environment:
+      - NODE_ENV=development
+
+  authService:
+    build: ./authService
+    image: symetria-marketplace-authservice  # Explicit lowercase image name
+    environment:
+      - NODE_ENV=development
+
+  courierService:
+    build: ./courierService
+    image: symetria-marketplace-courierservice  # Explicit lowercase image name
+    environment:
+      - NODE_ENV=development
+
+  errorsService:
+    build: ./errorsService
+    image: symetria-marketplace-errorsservice  # Explicit lowercase image name
+    environment:
+      - NODE_ENV=development
+
+  productService:
+    build: ./productService
+    image: symetria-marketplace-productservice  # Explicit lowercase image name
+    environment:
+      - NODE_ENV=development
+
+  siiService:
+    build: ./siiService
+    image: symetria-marketplace-siiservice  # Explicit lowercase image name
+    environment:
+      - NODE_ENV=development
+
+  transbankService:
+    build: ./transbankService
+    image: symetria-marketplace-transbankservice  # Explicit lowercase image name
+    environment:
+      - NODE_ENV=development
+
+  uiService:
+    build: ./uiService
+    image: symetria-marketplace-uiservice  # Explicit lowercase image name
+    environment:
+      - NODE_ENV=development
