@@ -9,7 +9,6 @@ services:
       - courierService
       - errorsService
       - productService
-      - siiService
       - transbankService
       - uiService
     environment:
@@ -36,12 +35,6 @@ services:
   productService:
     build: ./productService
     image: symetria-marketplace-productservice  # Explicit lowercase image name
-    environment:
-      - NODE_ENV=development
-
-  siiService:
-    build: ./siiService
-    image: symetria-marketplace-siiservice  # Explicit lowercase image name
     environment:
       - NODE_ENV=development
 
